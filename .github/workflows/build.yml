@@ -37,16 +37,16 @@ jobs:
                 run: npm run dist
                 shell: bash
 
-            - name: Check if in 'dev' branch
-                run: |
-                    if [[ "${{ github.ref }}" == "refs/heads/dev" ]]; then
-                        echo "Creating pull request to merge 'dev' into 'master'"
-                        git config --global user.name "GitHub Copilot"
-                        git config --global user.email "copilot@github.com"
-                        git checkout -b merge-dev-to-master
-                        git push -u origin merge-dev-to-master
-                        gh pr create --base master --head merge-dev-to-master --title "Merge 'dev' into 'master'" --body "Please review and approve this pull request."
-                    else
-                        echo "Not in 'dev' branch. Skipping pull request creation."
-                    fi
-                shell: bash
+            - name: Release to GitHub
+                uses: softprops/action-gh-release@v1
+                with:
+                    files: dist/*
+                    token: ${{ secrets.GITHUB_TOKEN }}
+                    body: |
+                        **New Release**
+                        Version: ${{ github.ref }}
+                        --------------------------
+                    tag_name: ${{ github.ref }}
+                    release_name: ${{ github.ref }}
+                    draft: false
+                    prerelease: false
