@@ -1,0 +1,69 @@
+# Custom Language File for Launcher Customizer
+
+[ejs.app]
+title = "Caos Pixelado - Launcher"
+
+[ejs.landing]
+mediaGitHubURL = "#"
+mediaTwitterURL = "#"
+mediaInstagramURL = "#"
+mediaYouTubeURL = "https://www.youtube.com/@nashote2585"
+mediaDiscordURL = "https://discord.gg/NV8KcsE4Vy"
+
+updateAvailableTooltip = "Actualización disponible"
+usernamePlaceholder = "Username"
+usernameEditButton = "Editar"
+settingsTooltip = "Ajustes"
+serverStatus = "SERVIDOR"
+serverStatusPlaceholder = "SIN CONEXIÓN"
+mojangStatus = "ESTADO MOJANG"
+mojangStatusTooltipTitle = "Servicios"
+mojangStatusNETitle = "No&nbsp;esenciales"
+newsButton = "NOTICIAS"
+launchButton = "JUGAR"
+launchButtonPlaceholder = "&#8226; No has seleccionado un servidor"
+launchDetails = "Por favor, espera.."
+newsNavigationStatus = "{currentPage} de {totalPages}"
+newsErrorLoadSpan = "Buscando noticias.."
+newsErrorFailedSpan = "Error al cargar noticias"
+newsErrorRetryButton = "Intentar nuevamente"
+newsErrorNoneSpan = "Sin noticias"
+
+[ejs.login]
+loginCancelText = "Cancelar"
+loginSubheader = "Login de Minecraft"
+loginEmailError = "* Valor invalido"
+loginEmailPlaceholder = "EMAIL O USERNAME"
+loginPasswordError = "* Requerido"
+loginPasswordPlaceholder = "CONTRASEÑA"
+loginForgotPasswordLink = "https://minecraft.net/password/forgot/"
+loginForgotPasswordText = "Has olvidado la contraseña?"
+loginRememberMeText = "Recordarme"
+loginButtonText = "LOGIN"
+loginNeedAccountLink = "https://minecraft.net/store/minecraft-java-edition/"
+loginNeedAccountText = "Necesitas una cuenta?"
+loginPasswordDisclaimer1 = "La constraseña es enviada a mojang y nosotros no la guardamos."
+loginPasswordDisclaimer2 = "{appName} no está afiliado con Mojang AB."
+
+[ejs.loginOptions]
+loginOptionsTitle = "Opciones para inicio de sesión"
+loginWithMicrosoft = "Iniciar sesión con Microsoft"
+loginWithMojang = "Iniciar sesión con Mojang"
+cancelButton = "Cancelar"
+
+[ejs.overlay]
+serverSelectHeader = "Servidores disponibles"
+serverSelectConfirm = "Select"
+serverSelectCancel = "Cancel"
+accountSelectHeader = "Select an Account"
+accountSelectConfirm = "Select"
+accountSelectCancel = "Cancel"
+
+[ejs.settings]
+sourceGithubLink = "#"
+supportLink = "#"
+
+[ejs.welcome]
+welcomeHeader = "Bienvenido a Caos Pixelado"
+welcomeDescription = "Our mission is to recreate the universe imagined by author George RR Martin in his fantasy series, A Song of Ice and Fire.  Through the collaborative effort of thousands of community members, we have sought to create Westeros as accurately and precisely as possible within Minecraft.  The world we are creating is yours to explore.  Journey from Dorne to Castle Black, and if you aren’t afraid, beyond the Wall itself, but best not delay.  As the words of House Stark ominously warn: Winter is Coming."
+welcomeDescCTA = "Estas a pocos clicks de jugar."
