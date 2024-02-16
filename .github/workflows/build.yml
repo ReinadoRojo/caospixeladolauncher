@@ -14,39 +14,39 @@ jobs:
                 os: [macos-latest, ubuntu-latest, windows-latest]
 
         steps:
-            - name: Check out Git repository
-                uses: actions/checkout@v3
+          - name: Check out Git repository
+            uses: actions/checkout@v3
 
-            - name: Set up Node
-                uses: actions/setup-node@v3
-                with:
-                    node-version: 18
+          - name: Set up Node
+              uses: actions/setup-node@v3
+              with:
+                node-version: 18
 
-            - name: Set up Python
-                uses: actions/setup-python@v4
-                with:
-                    python-version: 3.x
+          - name: Set up Python
+              uses: actions/setup-python@v4
+              with:
+                python-version: 3.x
 
-            - name: Install Dependencies
-                run: npm ci
-                shell: bash
+          - name: Install Dependencies
+              run: npm ci
+              shell: bash
 
             - name: Build
                 env:
-                    GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+                  GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
                 run: npm run dist
                 shell: bash
 
             - name: Release to GitHub
                 uses: softprops/action-gh-release@v1
                 with:
-                    files: dist/*
-                    token: ${{ secrets.GITHUB_TOKEN }}
-                    body: |
-                        **New Release**
-                        Version: ${{ github.ref }}
-                        --------------------------
-                    tag_name: ${{ github.ref }}
-                    release_name: ${{ github.ref }}
-                    draft: false
-                    prerelease: false
+                  files: dist/*
+                  token: ${{ secrets.GITHUB_TOKEN }}
+                  body: |
+                      **New Release**
+                      Version: ${{ github.ref }}
+                      --------------------------
+                  tag_name: ${{ github.ref }}
+                  release_name: ${{ github.ref }}
+                  draft: false
+                  prerelease: false
