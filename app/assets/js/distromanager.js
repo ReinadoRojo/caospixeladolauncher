@@ -2,7 +2,7 @@ const { DistributionAPI } = require('helios-core/common')
 
 const ConfigManager = require('./configmanager')
 
-exports.REMOTE_DISTRO_URL = 'http://172.233.174.95:5555/distribution.json'
+exports.REMOTE_DISTRO_URL = 'https://storage.googleapis.com/caospixeladobucket/distribution.json'
 
 const api = new DistributionAPI(
     ConfigManager.getLauncherDirectory(),
