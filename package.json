@@ -4,7 +4,7 @@
     "productName": "Caos Pixelado",
     "description": "Custom Minecraft Launcher",
     "author": "Ezequiel Carneiro (https://github.com/ReinadoRojo/)",
-    "license": "EUROPEAN UNION PUBLIC LICENCE v. 1.2",
+    "license": "MIT License",
     "homepage": "https://github.com/ReinadoRojo/caospixeladolauncher",
     "bugs": {
         "url": "https://github.com/ReinadoRojo/caospixeladolauncher/issues"
