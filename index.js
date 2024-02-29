@@ -40,7 +40,8 @@ function initAutoUpdater(event, data) {
     } else {
         autoUpdater.setFeedURL({
             owner: 'ReinadoRojo',
-            repo: 'caospixeladolauncher'
+            repo: 'caospixeladolauncher',
+            provider: 'github',
         })
     }
 
