@@ -37,10 +37,17 @@ function initAutoUpdater(event, data) {
             __dirname,
             'dev-app-update.yml'
         )
+    } else {
+        autoUpdater.setFeedURL({
+            owner: 'ReinadoRojo',
+            repo: 'caospixeladolauncher'
+        })
     }
+
     if (process.platform === 'darwin') {
         autoUpdater.autoDownload = false
     }
+
     autoUpdater.on('update-available', (info) => {
         event.sender.send('autoUpdateNotification', 'update-available', info)
     })
